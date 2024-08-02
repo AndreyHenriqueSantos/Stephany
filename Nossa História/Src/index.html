@@ -1,0 +1,83 @@
+<!DOCTYPE hmtl>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa História!</title>
+    <style>
+     body {
+        background: linear-gradient(to bottom, skyblue, pink);
+        font-family: 'Sans-Serif';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        color: black;
+      }
+     .container {
+       text-align: center;
+       background: linear-gradient(to bottom, skyblue, pink)
+       padding:40px;
+       border-radius: 10px;
+       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+     }
+     .header {
+       font-size: 24px;
+       margin-bottom: 20px;
+     }
+     .logo {
+       width: 250px;
+     }
+     .image-container img {
+       width: 100%;
+       border-radius: 10px;
+       margin-top: 20px;
+     }
+     .message {
+       font-size: 18px;
+       margin-bottom: 20px;
+     }
+     .button {
+       background-color: red;
+       color: white;
+       padding: 10px 20px;
+       text-decoration: none;
+       border-radius: 5px;
+       cursor: pointer;
+       
+     }
+    </style>
+    <body> 
+    <div class="container">
+    <img class="logo" src="./img/logo.png" alt="Logo Sword Art Online">
+    <div class="header">
+    <h2>Nossa História Do Começo!</h2>
+    </div>
+    <div class="image-container">
+      <img src="./img/amor.jpg" alt="Imagem de Sword Art Online fofa">
+      </div>
+      <div class="message">
+        <p></p>
+        <p>
+          "Você foi a melhor coisa que aconteceu na minha vida, você é incrível e eu te amo muito garota! Obrigado por me dar essa oportunidade de me sentir amado e também de amar!"
+        </p>
+     </div>
+     <input type="password" id="password" placeholder="Digite a senha!">
+     <button class="button" onclick="CheckPassword()">Para o meu amor!</button>
+     </div>
+     <script>
+       function CheckPassword() {
+         var senhaCorreta = "21/04 Bella"; //Coloque aqui a senha correta
+         var SenhaInserida = document.getElementById("password").value;
+         
+         if (SenhaInserida === senhaCorreta) {
+           window.location.href = "index1.html"; //Redireciona para outra página
+         } else {
+           alert("Então... Você não é quem eu espero aqui, acesso negado! Otário!")
+         }
+       }
+     </script>
+    </body>
+  </html>
